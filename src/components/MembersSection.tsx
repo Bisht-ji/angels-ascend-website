@@ -68,6 +68,38 @@ const MembersSection = () => {
             <div className="text-sm text-muted-foreground">Co-Leaders</div>
           </div>
         </div>
+
+        {/* Live Clan Members */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="font-medieval text-3xl font-bold text-foreground mb-4">
+              Live <span className="text-primary">Clan Members</span>
+            </h3>
+            <div className="w-16 h-1 bg-gradient-gold mx-auto mb-6"></div>
+            <p className="text-muted-foreground">
+              Real-time data from ClashOfStats
+            </p>
+          </div>
+          
+          <div className="bg-card/50 border border-border rounded-lg p-6">
+            <iframe 
+              src="https://www.clashofstats.com/clans/ascended-angels-PJ00QGGQ/members/"
+              className="w-full h-96 border-0 rounded-lg"
+              title="Live Clan Members from ClashOfStats"
+              loading="lazy"
+            />
+            <div className="mt-4 text-center">
+              <a 
+                href="https://www.clashofstats.com/clans/ascended-angels-PJ00QGGQ/members/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 text-sm transition-colors"
+              >
+                View Full Stats on ClashOfStats →
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

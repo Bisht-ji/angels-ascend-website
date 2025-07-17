@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Users, Trophy } from 'lucide-react';
-import heroBanner from '@/assets/hero-banner.jpg';
+const heroBanner = '/lovable-uploads/c175021a-fdd8-4645-9b90-ec86e423a50a.png';
 
 const HeroSection = () => {
   const handleJoinClan = () => {
@@ -20,7 +20,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="font-medieval text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 drop-shadow-lg">
-          <span className="text-primary">Ascendant</span>
+          <span className="text-primary">Ascended</span>
           <br />
           <span className="text-foreground">Angels</span>
         </h1>
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </p>
         
         <p className="text-lg sm:text-xl text-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Welcome to Ascendant Angels — a clan built on fun, respect, and teamwork. 
+          Welcome to Ascended Angels — a clan built on fun, respect, and teamwork. 
           Join us and be part of our legacy.
         </p>
 

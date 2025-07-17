@@ -3,18 +3,10 @@ import { Crown, Shield, Star, User } from 'lucide-react';
 
 const MembersSection = () => {
   const members = [
-    { name: "Avatar", role: "Leader", icon: Crown, favorite: "Dragons & Lightning" },
+    { name: "Hungabunga", role: "Leader", icon: Crown, favorite: "Battle Master" },
+    { name: "Avatar", role: "Co-Leader", icon: Shield, favorite: "Dragons & Lightning" },
     { name: "Mob", role: "Co-Leader", icon: Shield, favorite: "GoWiPe Master" },
     { name: "Eva", role: "Co-Leader", icon: Shield, favorite: "Hog Rider Specialist" },
-    { name: "StormBreaker", role: "Elder", icon: Star, favorite: "Balloon Attacks" },
-    { name: "GoldenKnight", role: "Elder", icon: Star, favorite: "Miner Control" },
-    { name: "ShadowHunter", role: "Elder", icon: Star, favorite: "LavaLoon" },
-    { name: "DragonSlayer", role: "Member", icon: User, favorite: "Mass Dragons" },
-    { name: "ArcaneMage", role: "Member", icon: User, favorite: "Wizard Attacks" },
-    { name: "IronFist", role: "Member", icon: User, favorite: "Giant Healer" },
-    { name: "PhoenixRider", role: "Member", icon: User, favorite: "Electro Dragons" },
-    { name: "CrystalArcher", role: "Member", icon: User, favorite: "Queen Walk" },
-    { name: "ThunderBolt", role: "Member", icon: User, favorite: "Zap Dragons" },
   ];
 
   const getRoleColor = (role: string) => {
@@ -41,7 +33,7 @@ const MembersSection = () => {
         </div>
 
         {/* Members Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {members.map((member, index) => {
             const IconComponent = member.icon;
             return (
@@ -66,22 +58,14 @@ const MembersSection = () => {
         </div>
 
         {/* Member Stats */}
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8">
+        <div className="mt-16 grid grid-cols-2 gap-8 max-w-md mx-auto">
           <div className="text-center">
             <div className="text-3xl font-bold text-primary mb-2">1</div>
             <div className="text-sm text-muted-foreground">Leader</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">2</div>
-            <div className="text-sm text-muted-foreground">Co-Leaders</div>
-          </div>
-          <div className="text-center">
             <div className="text-3xl font-bold text-primary mb-2">3</div>
-            <div className="text-sm text-muted-foreground">Elders</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">6</div>
-            <div className="text-sm text-muted-foreground">Members</div>
+            <div className="text-sm text-muted-foreground">Co-Leaders</div>
           </div>
         </div>
       </div>

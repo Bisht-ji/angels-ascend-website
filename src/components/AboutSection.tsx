@@ -8,7 +8,7 @@ const AboutSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-medieval text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            About <span className="text-primary">Our Clan</span>
+            About <span className="text-primary">Ascended Angels</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-gold mx-auto mb-8"></div>
         </div>
@@ -67,7 +67,7 @@ const AboutSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-sm text-foreground">
-              <p><span className="text-primary font-semibold">War Co-Leaders:</span> Avatar, Mob, Eva</p>
+              <p><span className="text-primary font-semibold">War Co-Leaders:</span> Hungabunga, Avatar, Mob, Eva</p>
               <p>• Normal war participation is optional but recommended</p>
               <p>• If opted in, both attacks must be used</p>
               <p>• Always attack your mirror first, then recommended target after 2 hours</p>

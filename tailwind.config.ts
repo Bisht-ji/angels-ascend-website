@@ -61,7 +61,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Medieval theme colors
+				stone: {
+					DEFAULT: 'hsl(var(--stone))',
+					light: 'hsl(var(--stone-light))'
+				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					dark: 'hsl(var(--gold-dark))',
+					light: 'hsl(var(--gold-light))'
 				}
+			},
+			backgroundImage: {
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-stone': 'var(--gradient-stone)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'gold': 'var(--shadow-gold)',
+				'stone': 'var(--shadow-stone)',
+				'glow': 'var(--shadow-glow)'
+			},
+			fontFamily: {
+				'medieval': ['Cinzel', 'serif'],
+				'body': ['Inter', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -21,7 +21,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('home')}>
             <Shield className="h-8 w-8 text-primary" />
             <span className="font-medieval font-bold text-xl text-foreground">
-              Ascendant Angels
+              Ascended Angels
             </span>
           </div>
 

@@ -5,7 +5,7 @@ const MembersSection = () => {
   const members = [
     { name: "Hungabunga", role: "Leader", icon: Crown, favorite: "Battle Master" },
     { name: "Avatar", role: "Co-Leader", icon: Shield, favorite: "Dragons & Lightning" },
-    { name: "Mob", role: "Co-Leader", icon: Shield, favorite: "GoWiPe Master" },
+    { name: "Mub", role: "Co-Leader", icon: Shield, favorite: "GoWiPe Master" },
     { name: "Eva", role: "Co-Leader", icon: Shield, favorite: "Hog Rider Specialist" },
   ];
 

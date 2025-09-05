@@ -4,6 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
+  server: {
+    port: 8080
+  },
   plugins: [
     react(),
     mode === 'development' && componentTagger()
@@ -13,5 +16,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/ascendant-angels/', // 👈 add this line only
 }));

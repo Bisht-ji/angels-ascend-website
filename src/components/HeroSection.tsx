@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Users, Trophy } from 'lucide-react';
-const heroBanner = '/lovable-uploads/c175021a-fdd8-4645-9b90-ec86e423a50a.png';
+import heroBanner from '@/assets/hero-banner.jpg';
 
 const HeroSection = () => {
   const handleJoinClan = () => {

@@ -3,10 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-export default defineConfig(({ mode }) => {
-  const repo = process.env.GITHUB_REPOSITORY?.split('/')?.[1] || '';
-  const isUserSite = repo.endsWith('.github.io');
-  const base = mode === 'production' ? (isUserSite ? '/' : `/${repo}/`) : '/';
+export default defineConfig(({ mode, command }) => {
+  // Use the base path passed from the build command or default to '/'
+  const base = command === 'build' ? undefined : '/'; // Let the CLI --base override in production
 
   return {
     server: {
